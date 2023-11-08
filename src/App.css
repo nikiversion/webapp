@@ -14,8 +14,7 @@
   display: flex;
   list-style: none;
   background-color: rgb(74, 10, 90);
-  
-  font-size: 1.8em;
+  font-size: 1.2em;
   color: white;
   
  
@@ -106,5 +105,8 @@ Card.Img
   width: 25px;
   height: 25px;
 }
-
+.buttonnavi
+{
+  background-color: brown;
+}
 

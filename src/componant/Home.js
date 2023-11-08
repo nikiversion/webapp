@@ -2,9 +2,14 @@ import React,{useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
-
+import { Link,useNavigate } from 'react-router-dom';
 const Home = () => {
-    const [link,setLink]=useState("www.google.com")
+    const [link,setLink]=useState("www.google.com");
+    const navigate=useNavigate();
+
+    const navigateHome =()=>{
+      navigate('/entquiz')
+    }
   return (
     <div className='imagetemple'>
       <div className='container-fluid mx-2 '>
@@ -13,7 +18,10 @@ const Home = () => {
             <Button className='btn btn-worning w-100'>Men</Button>
             <Button className='btn btn-worning w-100'>Men</Button>
             <Button className='btn btn-worning w-100'>Men</Button>
-            <Button className='btn btn-worning w-100 mb-4'>Men</Button>
+            <Button className='btn btn-worning w-100 mb-4'onClick={navigateHome}>Ent Quiz</Button>
+           
+            
+
 
    </div>
    

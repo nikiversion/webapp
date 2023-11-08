@@ -12,10 +12,10 @@ function App() {
     <div>
     <BrowserRouter>
     
-    <HeaderButton/>
+    {/* <HeaderButton/> */}
     <Routes>
-      <Route path='/' element={<Home/>}/>
-      <Route path='/entquiz' element={<QuizObject/>}/>
+      {/* <Route path='/' element={<Home/>}/> */}
+      <Route path='/' element={<QuizObject/>}/>
       </Routes>
     </BrowserRouter>
     </div>
